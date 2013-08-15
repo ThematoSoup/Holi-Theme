@@ -1,0 +1,469 @@
+/*
+Theme Name:		Twenty Thirteen Rainbow
+Theme URI:		http://thematosoup.com/
+Description:	Child theme for the Twenty Thirteen theme 
+Author:			ThematoSoup
+Author URI:		http://thematosoup.com
+Template:		twentythirteen
+Version:		1.0
+*/
+
+@import url("../twentythirteen/style.css");
+
+// Define color schemes, names will be added to body element as classes
+$color_schemes: green purple pink red blue;
+
+// Define colors for each color scheme, first colors is for green, second for purple etc.
+// http://benfrain.com/working-with-lists-and-each-loops-in-sass-with-the-index-and-nth-function/
+$color1_colors:		#cdf5c9	#eed1ec	#fcc7c3	#f7e7c8	#d3c9f5	;
+$color2_colors:		#26d926	#b945a5	#f2330c	#dfaf20	#6126d9	;
+$color3_colors:		#f5faf4	#f9f5f9	#faf3f3	#faf8f4	#f5f4fa	;
+$color4_colors:		#7ade58	#bf70c7	#f14554	#e39a54	#6258de	;
+$color5_colors:		#eaf4e9	#f2ebf2	#f6e9e8	#f5f0e9	#ebe9f4	;
+$color6_colors:		#a9d14d	#8c64b9	#e43a94	#d54f48	#4d7dd1	;
+$color7_colors:		#bdce3b	#6f55b4	#e326ae	#d3364c	#3b8dce	;
+$color8_colors:		#bbe0b0	#d5b8d7	#e6a9ad	#e1c8ae	#b5b0e0	;
+$color9_colors:		#80cd45	#9e5eb5	#e03260	#d26e41	#4553cd	;
+$color10_colors:	#d4e4d2	#e1d5e0	#e6d0cf	#e4ddd1	#d6d2e4	;
+$color11_colors:	#baca46	#755db2	#dd33ac	#ce4154	#468eca	;
+$color12_colors:	#bbca46	#755db2	#dd33ad	#ce4155	#468fca	;
+$color13_colors:	#a7c943	#7f5bb1	#db3094	#cd3f40	#437bc9	;
+$color14_colors:	#9ac43e	#7f56ac	#d62b84	#c8423a	#3e6ec4	;
+$color15_colors:	#a5c148	#7d5eac	#d23794	#c54447	#487cc1	;
+$color16_colors:	#97bb2f	#6e48a2	#cf1b83	#c02b2b	#2f69bb	;
+$color17_colors:	#c1d0be	#cdc1cd	#d2bbbb	#d0c8bd	#c1bed0	;
+$color18_colors:	#88ad25	#633d95	#c01173	#b12220	#255bad	;
+$color19_colors:	#b0bfae	#bcb1bb	#c2adac	#c0b9ae	#b2aebf	;
+$color20_colors:	#82a124	#5c3a8b	#b31270	#a52021	#2458a1	;
+$color21_colors:	#7f9e21	#583788	#b00f6d	#a21d1e	#21569e	;
+$color22_colors:	#93931d	#3f327e	#a40c8a	#971938	#1d6b93	;
+$color23_colors:	#707a6f	#787178	#7c6f6e	#7b766f	#716f7a	;
+$color24_colors:	#576526	#413159	#6d1d4d	#672426	#264265	;
+$color25_colors:	#5b655a	#635c62	#675a59	#66625a	#5d5a65	;
+$color26_colors:	#1f1e11	#14131c	#210f20	#1f1015	#111c1f	;
+$color27_colors:	#1e1c10	#12121b	#200e20	#1e0f15	#101b1e	;
+$color28_colors:	#121312	#131213	#141212	#131312	#121213	;
+$color29_colors:	#101210	#121112	#131110	#121110	#111012	;
+$color30_colors:	rgba(121, 163, 115, 0.2)	rgba(154, 123, 152, 0.2)	rgba(169, 111, 108, 0.2)	rgba(164, 145, 113, 0.2)	rgba(125, 115, 163, 0.2)	;
+$color31_colors:	rgba(234, 244, 233, 0.7)	rgba(242, 235, 242, 0.7)	rgba(246, 233, 232, 0.7)	rgba(245, 240, 233, 0.7)	rgba(235, 233, 244, 0.7)	;
+
+@each $current_scheme in $color_schemes {
+	$i: index($color_schemes, $current_scheme);
+	$color1: nth($color1_colors, $i);
+	$color2: nth($color2_colors, $i);
+	$color3: nth($color3_colors, $i);
+	$color4: nth($color4_colors, $i);
+	$color5: nth($color5_colors, $i);
+	$color6: nth($color6_colors, $i);
+	$color7: nth($color7_colors, $i);
+	$color8: nth($color8_colors, $i);
+	$color9: nth($color9_colors, $i);
+	$color10: nth($color10_colors, $i);
+	$color11: nth($color11_colors, $i);
+	$color12: nth($color12_colors, $i);
+	$color13: nth($color13_colors, $i);
+	$color14: nth($color14_colors, $i);
+	$color15: nth($color15_colors, $i);
+	$color16: nth($color16_colors, $i);
+	$color17: nth($color17_colors, $i);
+	$color18: nth($color18_colors, $i);
+	$color19: nth($color19_colors, $i);
+	$color20: nth($color20_colors, $i);
+	$color21: nth($color21_colors, $i);
+	$color22: nth($color22_colors, $i);
+	$color23: nth($color23_colors, $i);
+	$color24: nth($color24_colors, $i);
+	$color25: nth($color25_colors, $i);
+	$color26: nth($color26_colors, $i);
+	$color27: nth($color27_colors, $i);
+	$color28: nth($color28_colors, $i);
+	$color29: nth($color29_colors, $i);
+	$color30: nth($color30_colors, $i);
+	$color31: nth($color31_colors, $i);
+
+	body.scheme-#{$current_scheme} {
+
+		color: $color28;
+		a {
+			color: $color18;
+		}
+		a:visited {
+			color: $color22;
+		}
+		a:active,
+		a:hover {
+			color: $color9;
+		}
+		mark {
+			background: $color2;
+		}
+		ins {
+			background: $color1;
+		}
+		button,
+		input,
+		textarea {
+			border: 2px solid $color17;
+		}
+		input,
+		textarea {
+			color: $color28;
+		}
+		input:focus,
+		textarea:focus {
+			border: 2px solid $color19;
+		}
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background: $color14;
+			background: -webkit-linear-gradient(top, $color14 0%, $color16 100%);
+			background:   linear-gradient(to bottom, $color14 0%, $color16 100%);
+			border: none;
+			border-bottom: 3px solid $color21;
+			color: #fff;
+		}
+		button:hover,
+		button:focus,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input[type="reset"]:hover,
+		input[type="submit"]:focus,
+		input[type="button"]:focus,
+		input[type="reset"]:focus {
+			background: $color6;
+			background: -webkit-linear-gradient(top, $color6 0%, $color13 100%);
+			background:   linear-gradient(to bottom, $color6 0%, $color13 100%);
+		}
+		button:active,
+		input[type="submit"]:active,
+		input[type="button"]:active,
+		input[type="reset"]:active {
+			background: $color16;
+			background: -webkit-linear-gradient(top, $color16 0%, $color14 100%);
+			background:   linear-gradient(to bottom, $color16 0%, $color14 100%);
+			border-top: 3px solid $color21;
+		}
+		::-webkit-input-placeholder {
+			color: $color23;
+		}
+		:-moz-placeholder {
+			color: $color23;
+		}
+		::-moz-placeholder {
+			color: $color23;
+		}
+		:-ms-input-placeholder {
+			color: $color23;
+		}
+		.wp-caption .wp-caption-text,
+		.entry-caption,
+		.gallery-caption {
+			color: $color26;
+		}
+		.site-header .home-link {
+			color: $color28;
+		}
+		.nav-menu li a {
+			color: $color28;
+		}
+		.nav-menu li:hover > a,
+		.nav-menu li a:hover {
+			background-color: $color26;
+			color: #fff;
+		}
+		.nav-menu .sub-menu,
+		.nav-menu .children {
+			background-color: $color26;
+			border: 2px solid $color5;
+			border-top: none;
+		}
+		ul.nav-menu ul a:hover,
+		.nav-menu ul ul a:hover {
+			background-color: $color15;
+		}
+		.nav-menu .current_page_item > a,
+		.nav-menu .current_page_ancestor > a,
+		.nav-menu .current-menu-item > a,
+		.nav-menu .current-menu-ancestor > a {
+			color: $color20;
+		}
+		ul.nav-menu ul a,
+		.nav-menu ul ul a {
+			color: #fff;
+			margin: 0;
+			width: 200px;
+		}
+		.navbar {
+			background-color: $color5;
+		}
+		.site-header .search-field:focus {
+			border: 2px solid $color19;
+		}
+		.entry-title a {
+			color: $color28;
+		}
+		.entry-title a:hover {
+			color: $color9;
+		}
+		.entry-meta a {
+			color: $color20;
+		}
+		.entry-meta a:hover {
+			color: $color20;
+		}
+		.entry-content a,
+		.comment-content a {
+			color: $color20;
+		}
+		.entry-content a:hover,
+		.comment-content a:hover {
+			color: $color9;
+		}
+		.format-status .entry-content .page-links a,
+		.format-gallery .entry-content .page-links a,
+		.format-chat .entry-content .page-links a,
+		.format-quote .entry-content .page-links a,
+		.page-links a {
+			background: $color12;
+			border: 1px solid $color12;
+		}
+		.format-gallery .entry-content .page-links a:hover,
+		.format-audio .entry-content .page-links a:hover,
+		.format-status .entry-content .page-links a:hover,
+		.format-video .entry-content .page-links a:hover,
+		.format-chat .entry-content .page-links a:hover,
+		.format-quote .entry-content .page-links a:hover,
+		.page-links a:hover {
+			color: $color12;
+		}
+		.page-links .page-links-title {
+			background: transparent;
+		}
+		.hentry .mejs-mediaelement,
+		.hentry .mejs-container .mejs-controls {
+			background: $color26;
+		}
+		.hentry .mejs-controls .mejs-time-rail .mejs-time-current {
+			background: $color9;
+		}
+		.format-aside {
+			background-color: $color5;
+		}
+		.blog .format-aside:first-of-type,
+		.single .format-aside:first-of-type,
+		.format-aside + .format-aside,
+		.format-aside + .format-link,
+		.format-link + .format-aside {
+			box-shadow: inset 0 2px 2px $color30;
+		}
+		.format-audio {
+			background-color: $color15;
+		}
+		.format-audio .entry-title {
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.format-audio .entry-content:before {
+			content: "\f109";
+			float: left;
+			font-size: 64px;
+			position: relative;
+			top: 4px;
+		}
+		.format-audio .entry-content a,
+		.format-audio .entry-meta a,
+		.format-audio .entry-content a:hover,
+		.format-audio .entry-meta a:hover {
+			color: $color3;
+		}
+		.format-chat {
+			background-color: $color8;
+		}
+		.format-chat .entry-meta a,
+		.format-chat .entry-content a {
+			color: $color24;
+		}
+		.format-chat .chat .chat-timestamp {
+			color: $color24;
+		}
+		.format-gallery {
+			background-color: $color4;
+		}
+		.format-gallery .entry-meta a,
+		.format-gallery .entry-content a {
+			color: $color24;
+		}
+		.format-link {
+			background-color: $color5;
+		}
+		.blog .format-link:first-of-type,
+		.single .format-link:first-of-type {
+			box-shadow: inset 0 2px 2px $color30;
+		}
+		.format-link .entry-title {
+			color: $color18;
+		}
+		.format-link .entry-title a {
+			color: $color20;
+		}
+		.format-quote {
+			background-color: $color27;
+		}
+		.format-quote .entry-content,
+		.format-quote .entry-meta {
+			color: $color5;
+		}
+		.format-quote .entry-content a,
+		.format-quote .entry-meta a,
+		.format-quote .linked {
+			color: $color12;
+		}
+		.format-status {
+			background-color: $color24;
+		}
+		.format-status .entry-content a {
+			color: $color8;
+		}
+		
+		.format-status .entry-meta a {
+			color: $color5;
+		}
+		
+		.format-status .entry-content {
+			color: $color5;
+		}
+		.format-video {
+			background-color: $color15;
+		}
+		.format-video .entry-content a,
+		.format-video .entry-meta a,
+		.format-video .entry-content a:hover,
+		.format-video .entry-meta a:hover {
+			color: $color3;
+		}
+		.format-video .entry-meta {
+			color: $color26;
+		}
+		.attachment .hentry {
+			background-color: $color10;
+		}
+		.attachment .entry-meta a,
+		.attachment .entry-meta .edit-link:before,
+		.attachment .full-size-link:before {
+			color: $color18;
+		}
+		.navigation a {
+			color: $color20;
+		}
+		.navigation a:hover {
+			color: $color9;
+		}
+		.paging-navigation {
+			background-color: $color10;
+		}
+		.paging-navigation .meta-nav {
+			background-color: $color12;
+		}
+		.paging-navigation a:hover .meta-nav {
+			background-color: $color9;
+		}
+		.post-navigation {
+			color: $color18;
+		}
+		.single-format-status .author-description {
+			color: $color5;
+		}
+		.author-link {
+			color: $color18;
+		}
+		.archive-header {
+			background-color: $color10;
+		}
+		.page-header {
+			background-color: $color10;
+		}
+		.error404 .page-title:before {
+			color: $color10;
+		}
+		.error404 .page-wrapper {
+			background-color: $color10;
+		}
+		.comment-author .fn,
+		.comment-author .url,
+		.comment-reply-link,
+		.comment-reply-login {
+			color: $color20;
+		}
+		.comment-meta a:hover {
+			color: $color9;
+		}
+		.comment-respond {
+			background-color: $color5;
+		}
+		.comment-reply-title small a {
+			color: $color29;
+		}
+		.comment-reply-title small a:hover {
+			color: $color7;
+		}
+		.comment-form .required {
+			color: $color7;
+		}
+		.form-allowed-tags,
+		.form-allowed-tags code {
+			color: $color25;
+		}
+		.no-comments {
+			background-color: $color5;
+		}
+		.widget {
+			background-color: $color31;
+		}
+		.widget a {
+			color: $color20;
+		}
+		.widget a:hover {
+			color: $color9;
+		}
+		.site-footer {
+			background-color: $color10;
+			color: $color25;
+		}
+		.site-footer a {
+			color: $color25;
+		}
+		.site-footer .sidebar-container {
+			background-color: $color26;
+		}
+		.site-footer .widget a {
+			color: $color11;
+		}
+		.widget_calendar tbody .pad, .site-footer .widget_calendar tbody .pad {
+			background-color: transparent;
+		}
+		.site-footer .widget {
+			background: transparent;
+			color: #fff;
+		}
+		@media (max-width: 643px) {
+			.toggled-on .nav-menu li > ul a {
+				color: $color28;
+			}
+			.toggled-on .nav-menu li > ul {
+				background-color: transparent;
+			}
+			.toggled-on .nav-menu li:hover > a,
+			.toggled-on .nav-menu .children a {
+				background-color: transparent;
+				color: $color28;
+			}
+			.toggled-on .nav-menu li a:hover,
+			.toggled-on .nav-menu ul a:hover {
+				background-color: $color15;
+			}
+		}
+
+	}
+}
