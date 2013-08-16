@@ -10,7 +10,7 @@ function twentythirteen_rainbow_customize( $wp_customize ) {
 		// Arguments array
 		array(
 			'default' => 'green',
-			'type' => 'theme_mod'
+			'type' => 'option'
 		)
 	);
 	$wp_customize->add_control(
@@ -47,10 +47,21 @@ add_action( 'customize_register', 'twentythirteen_rainbow_customize' );
  * Add color scheme body_class
  */
 function twentythirteen_rainbow_body_classes( $classes ) {
-	$classes[] = 'scheme-' . get_theme_mod( 'twentythirteen_scheme' );
+	$classes[] = 'scheme-' . get_option( 'twentythirteen_scheme' );
 	return $classes;	
 }
 add_filter( 'body_class', 'twentythirteen_rainbow_body_classes' );
+
+
+/**
+* Adds color scheme class to Tiny MCE editor
+*/
+function twentythirteen_rainbow_tiny_mce_classes( $thsp_mceInit ) {
+    $thsp_mceInit['body_class'] .= ' scheme-' . get_option( 'twentythirteen_scheme' );
+ 
+    return $thsp_mceInit;
+}
+add_filter( 'tiny_mce_before_init', 'twentythirteen_rainbow_tiny_mce_classes' );
 
 
 /*
