@@ -1,5 +1,5 @@
 /*
-Theme Name: Twenty Thirteen Rainbow
+Theme Name: Holi
 Description: Used to style the TinyMCE editor.
 */
 #tinymce.scheme-green { color: #121312; }
@@ -111,3 +111,91 @@ Description: Used to style the TinyMCE editor.
 #tinymce.scheme-blue.post-format-status a { color: #b5b0e0; }
 #tinymce.scheme-blue.post-format-video { background-color: #487cc1; }
 #tinymce.scheme-blue.post-format-video a { color: #f5f4fa; }
+
+#tinymce.scheme-yellow { color: #141412; }
+#tinymce.scheme-yellow ins { background: #fff9c0; }
+#tinymce.scheme-yellow a { color: #d2bf00; }
+#tinymce.scheme-yellow a:visited { color: #b07500; }
+#tinymce.scheme-yellow a:active, #tinymce.scheme-yellow a:hover { color: #f0ca23; }
+#tinymce.scheme-yellow .wp-caption { background: transparent; }
+#tinymce.scheme-yellow .wp-caption .wp-caption-text, #tinymce.scheme-yellow .wp-caption-dd { color: #23190c; }
+#tinymce.scheme-yellow.post-format-aside { background-color: #f7f5e7; }
+#tinymce.scheme-yellow.post-format-audio { background-color: #ead520; }
+#tinymce.scheme-yellow.post-format-audio a { color: #fbfaf3; }
+#tinymce.scheme-yellow.post-format-chat { background-color: #eadaa6; }
+#tinymce.scheme-yellow.post-format-chat a { color: #796d11; }
+#tinymce.scheme-yellow.post-format-gallery { background-color: #fbcc3b; }
+#tinymce.scheme-yellow.post-format-gallery a { color: #796d11; }
+#tinymce.scheme-yellow.post-format-link { background-color: #f7f5e7; }
+#tinymce.scheme-yellow.post-format-quote { background-color: #22170b; color: #f7f5e7; }
+#tinymce.scheme-yellow.post-format-quote a { color: #f6c41a; }
+#tinymce.scheme-yellow.post-format-status { background-color: #796d11; color: #f7f5e7; }
+#tinymce.scheme-yellow.post-format-status a { color: #eadaa6; }
+#tinymce.scheme-yellow.post-format-video { background-color: #ead520; }
+#tinymce.scheme-yellow.post-format-video a { color: #fbfaf3; }
+
+#tinymce.scheme-turquoise { color: #121213; }
+#tinymce.scheme-turquoise ins { background: #c9d4f5; }
+#tinymce.scheme-turquoise a { color: #259fad; }
+#tinymce.scheme-turquoise a:visited { color: #1d937f; }
+#tinymce.scheme-turquoise a:active, #tinymce.scheme-turquoise a:hover { color: #4596cd; }
+#tinymce.scheme-turquoise .wp-caption { background: transparent; }
+#tinymce.scheme-turquoise .wp-caption .wp-caption-text, #tinymce.scheme-turquoise .wp-caption-dd { color: #111f1b; }
+#tinymce.scheme-turquoise.post-format-aside { background-color: #e9ecf4; }
+#tinymce.scheme-turquoise.post-format-audio { background-color: #48b8c1; }
+#tinymce.scheme-turquoise.post-format-audio a { color: #f4f6fa; }
+#tinymce.scheme-turquoise.post-format-chat { background-color: #b0c3e0; }
+#tinymce.scheme-turquoise.post-format-chat a { color: #266165; }
+#tinymce.scheme-turquoise.post-format-gallery { background-color: #5890de; }
+#tinymce.scheme-turquoise.post-format-gallery a { color: #266165; }
+#tinymce.scheme-turquoise.post-format-link { background-color: #e9ecf4; }
+#tinymce.scheme-turquoise.post-format-quote { background-color: #101e1a; color: #e9ecf4; }
+#tinymce.scheme-turquoise.post-format-quote a { color: #46cac2; }
+#tinymce.scheme-turquoise.post-format-status { background-color: #266165; color: #e9ecf4; }
+#tinymce.scheme-turquoise.post-format-status a { color: #b0c3e0; }
+#tinymce.scheme-turquoise.post-format-video { background-color: #48b8c1; }
+#tinymce.scheme-turquoise.post-format-video a { color: #f4f6fa; }
+
+#tinymce.scheme-sepia { color: #18140f; }
+#tinymce.scheme-sepia ins { background: #e7e0d8; }
+#tinymce.scheme-sepia a { color: #836c4f; }
+#tinymce.scheme-sepia a:visited { color: #6e5b43; }
+#tinymce.scheme-sepia a:active, #tinymce.scheme-sepia a:hover { color: #a68c6c; }
+#tinymce.scheme-sepia .wp-caption { background: transparent; }
+#tinymce.scheme-sepia .wp-caption .wp-caption-text, #tinymce.scheme-sepia .wp-caption-dd { color: #1e1913; }
+#tinymce.scheme-sepia.post-format-aside { background-color: #f3f0ec; }
+#tinymce.scheme-sepia.post-format-audio { background-color: #a38867; }
+#tinymce.scheme-sepia.post-format-audio a { color: #f9f8f6; }
+#tinymce.scheme-sepia.post-format-chat { background-color: #d6cabb; }
+#tinymce.scheme-sepia.post-format-chat a { color: #564734; }
+#tinymce.scheme-sepia.post-format-gallery { background-color: #b49e83; }
+#tinymce.scheme-sepia.post-format-gallery a { color: #564734; }
+#tinymce.scheme-sepia.post-format-link { background-color: #f3f0ec; }
+#tinymce.scheme-sepia.post-format-quote { background-color: #1d1812; color: #f3f0ec; }
+#tinymce.scheme-sepia.post-format-quote a { color: #a68c6b; }
+#tinymce.scheme-sepia.post-format-status { background-color: #564734; color: #f3f0ec; }
+#tinymce.scheme-sepia.post-format-status a { color: #d6cabb; }
+#tinymce.scheme-sepia.post-format-video { background-color: #a38867; }
+#tinymce.scheme-sepia.post-format-video a { color: #f9f8f6; }
+
+#tinymce.scheme-gray { color: #0d0d0d; }
+#tinymce.scheme-gray ins { background: #ededed; }
+#tinymce.scheme-gray a { color: #575757; }
+#tinymce.scheme-gray a:visited { color: #3b3b3b; }
+#tinymce.scheme-gray a:active, #tinymce.scheme-gray a:hover { color: #909090; }
+#tinymce.scheme-gray .wp-caption { background: transparent; }
+#tinymce.scheme-gray .wp-caption .wp-caption-text, #tinymce.scheme-gray .wp-caption-dd { color: #101010; }
+#tinymce.scheme-gray.post-format-aside { background-color: whitesmoke; }
+#tinymce.scheme-gray.post-format-audio { background-color: #7b7b7b; }
+#tinymce.scheme-gray.post-format-audio a { color: #fbfbfb; }
+#tinymce.scheme-gray.post-format-chat { background-color: #d8d8d8; }
+#tinymce.scheme-gray.post-format-chat a { color: #353535; }
+#tinymce.scheme-gray.post-format-gallery { background-color: #afafaf; }
+#tinymce.scheme-gray.post-format-gallery a { color: #353535; }
+#tinymce.scheme-gray.post-format-link { background-color: whitesmoke; }
+#tinymce.scheme-gray.post-format-quote { background-color: #0f0f0f; color: whitesmoke; }
+#tinymce.scheme-gray.post-format-quote a { color: #777777; }
+#tinymce.scheme-gray.post-format-status { background-color: #353535; color: whitesmoke; }
+#tinymce.scheme-gray.post-format-status a { color: #d8d8d8; }
+#tinymce.scheme-gray.post-format-video { background-color: #7b7b7b; }
+#tinymce.scheme-gray.post-format-video a { color: #fbfbfb; }

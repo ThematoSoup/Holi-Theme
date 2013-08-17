@@ -1,4 +1,4 @@
-Twenty-Thirteen-Rainbow
-=======================
+Holi Theme
+==========
 
 Multicolor child theme for Twenty Thirteen WordPress theme

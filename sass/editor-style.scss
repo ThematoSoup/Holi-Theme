@@ -1,46 +1,45 @@
 /*
-Theme Name: Twenty Thirteen Rainbow
+Theme Name: Holi
 Description: Used to style the TinyMCE editor.
 */
 
 
 // Define color schemes, names will be added to body element as classes
-$color_schemes: green purple pink red blue;
+$color_schemes: green purple pink red blue yellow turquoise sepia gray;
 
 // Define colors for each color scheme, first colors is for green, second for purple etc.
 // http://benfrain.com/working-with-lists-and-each-loops-in-sass-with-the-index-and-nth-function/
-$color1_colors:		#cdf5c9	#eed1ec	#fcc7c3	#f7e7c8	#d3c9f5	;
-$color2_colors:		#26d926	#b945a5	#f2330c	#dfaf20	#6126d9	;
-$color3_colors:		#f5faf4	#f9f5f9	#faf3f3	#faf8f4	#f5f4fa	;
-$color4_colors:		#7ade58	#bf70c7	#f14554	#e39a54	#6258de	;
-$color5_colors:		#eaf4e9	#f2ebf2	#f6e9e8	#f5f0e9	#ebe9f4	;
-$color6_colors:		#a9d14d	#8c64b9	#e43a94	#d54f48	#4d7dd1	;
-$color7_colors:		#bdce3b	#6f55b4	#e326ae	#d3364c	#3b8dce	;
-$color8_colors:		#bbe0b0	#d5b8d7	#e6a9ad	#e1c8ae	#b5b0e0	;
-$color9_colors:		#80cd45	#9e5eb5	#e03260	#d26e41	#4553cd	;
-$color10_colors:	#d4e4d2	#e1d5e0	#e6d0cf	#e4ddd1	#d6d2e4	;
-$color11_colors:	#baca46	#755db2	#dd33ac	#ce4154	#468eca	;
-$color12_colors:	#bbca46	#755db2	#dd33ad	#ce4155	#468fca	;
-$color13_colors:	#a7c943	#7f5bb1	#db3094	#cd3f40	#437bc9	;
-$color14_colors:	#9ac43e	#7f56ac	#d62b84	#c8423a	#3e6ec4	;
-$color15_colors:	#a5c148	#7d5eac	#d23794	#c54447	#487cc1	;
-$color16_colors:	#97bb2f	#6e48a2	#cf1b83	#c02b2b	#2f69bb	;
-$color17_colors:	#c1d0be	#cdc1cd	#d2bbbb	#d0c8bd	#c1bed0	;
-$color18_colors:	#88ad25	#633d95	#c01173	#b12220	#255bad	;
-$color19_colors:	#b0bfae	#bcb1bb	#c2adac	#c0b9ae	#b2aebf	;
-$color20_colors:	#82a124	#5c3a8b	#b31270	#a52021	#2458a1	;
-$color21_colors:	#7f9e21	#583788	#b00f6d	#a21d1e	#21569e	;
-$color22_colors:	#93931d	#3f327e	#a40c8a	#971938	#1d6b93	;
-$color23_colors:	#707a6f	#787178	#7c6f6e	#7b766f	#716f7a	;
-$color24_colors:	#576526	#413159	#6d1d4d	#672426	#264265	;
-$color25_colors:	#5b655a	#635c62	#675a59	#66625a	#5d5a65	;
-$color26_colors:	#1f1e11	#14131c	#210f20	#1f1015	#111c1f	;
-$color27_colors:	#1e1c10	#12121b	#200e20	#1e0f15	#101b1e	;
-$color28_colors:	#121312	#131213	#141212	#131312	#121213	;
-$color29_colors:	#101210	#121112	#131110	#121110	#111012	;
-$color30_colors:	rgba(121, 163, 115, 0.2)	rgba(154, 123, 152, 0.2)	rgba(169, 111, 108, 0.2)	rgba(164, 145, 113, 0.2)	rgba(125, 115, 163, 0.2)	;
-$color31_colors:	rgba(234, 244, 233, 0.7)	rgba(242, 235, 242, 0.7)	rgba(246, 233, 232, 0.7)	rgba(245, 240, 233, 0.7)	rgba(235, 233, 244, 0.7)	;
-
+$color1_colors:	#cdf5c9	#eed1ec	#fcc7c3	#f7e7c8	#d3c9f5	#fff9c0	#c9d4f5	#e7e0d8	#ededed	;
+$color2_colors:	#26d926	#b945a5	#f2330c	#dfaf20	#6126d9	#feff00	#2643d9	#9f8360	#a1a1a1	;
+$color3_colors:	#f5faf4	#f9f5f9	#faf3f3	#faf8f4	#f5f4fa	#fbfaf3	#f4f6fa	#f9f8f6	#fbfbfb	;
+$color4_colors:	#7ade58	#bf70c7	#f14554	#e39a54	#6258de	#fbcc3b	#5890de	#b49e83	#afafaf	;
+$color5_colors:	#eaf4e9	#f2ebf2	#f6e9e8	#f5f0e9	#ebe9f4	#f7f5e7	#e9ecf4	#f3f0ec	#f5f5f5	;
+$color6_colors:	#a9d14d	#8c64b9	#e43a94	#d54f48	#4d7dd1	#fbe522	#4dbed1	#ab9374	#8b8b8b	;
+$color7_colors:	#bdce3b	#6f55b4	#e326ae	#d3364c	#3b8dce	#ffc70a	#3bcec5	#a38866	#707070	;
+$color8_colors:	#bbe0b0	#d5b8d7	#e6a9ad	#e1c8ae	#b5b0e0	#eadaa6	#b0c3e0	#d6cabb	#d8d8d8	;
+$color9_colors:	#80cd45	#9e5eb5	#e03260	#d26e41	#4553cd	#f0ca23	#4596cd	#a68c6c	#909090	;
+$color10_colors:	#d4e4d2	#e1d5e0	#e6d0cf	#e4ddd1	#d6d2e4	#e8e5ce	#d2d7e4	#e4dcd3	#e6e6e6	;
+$color11_colors:	#baca46	#755db2	#dd33ac	#ce4154	#468eca	#f6c61a	#46cac3	#a68c6b	#787878	;
+$color12_colors:	#bbca46	#755db2	#dd33ad	#ce4155	#468fca	#f6c41a	#46cac2	#a68c6b	#777777	;
+$color13_colors:	#a7c943	#7f5bb1	#db3094	#cd3f40	#437bc9	#f5e116	#43bdc9	#a48968	#7b7b7b	;
+$color14_colors:	#9ac43e	#7f56ac	#d62b84	#c8423a	#3e6ec4	#eed713	#3eb0c4	#a08562	#787878	;
+$color15_colors:	#a5c148	#7d5eac	#d23794	#c54447	#487cc1	#ead520	#48b8c1	#a38867	#7b7b7b	;
+$color16_colors:	#97bb2f	#6e48a2	#cf1b83	#c02b2b	#2f69bb	#ead601	#2faebb	#927858	#666666	;
+$color17_colors:	#c1d0be	#cdc1cd	#d2bbbb	#d0c8bd	#c1bed0	#d4d0ba	#bec4d0	#d5c9ba	#d5d5d5	;
+$color18_colors:	#88ad25	#633d95	#c01173	#b12220	#255bad	#d2bf00	#259fad	#836c4f	#575757	;
+$color19_colors:	#b0bfae	#bcb1bb	#c2adac	#c0b9ae	#b2aebf	#c3c0ab	#aeb3bf	#c9b9a6	#c5c5c5	;
+$color20_colors:	#82a124	#5c3a8b	#b31270	#a52021	#2458a1	#c6b400	#2496a1	#7c664b	#505050	;
+$color21_colors:	#7f9e21	#583788	#b00f6d	#a21d1e	#21569e	#c0ae00	#21949e	#786349	#4c4c4c	;
+$color22_colors:	#93931d	#3f327e	#a40c8a	#971938	#1d6b93	#b07500	#1d937f	#6e5b43	#3b3b3b	;
+$color23_colors:	#707a6f	#787178	#7c6f6e	#7b766f	#716f7a	#7d7b6d	#6f727a	#927858	#737373	;
+$color24_colors:	#576526	#413159	#6d1d4d	#672426	#264265	#796d11	#266165	#564734	#353535	;
+$color25_colors:	#5b655a	#635c62	#675a59	#66625a	#5d5a65	#686758	#5a5c65	#786349	#585858	;
+$color26_colors:	#1f1e11	#14131c	#210f20	#1f1015	#111c1f	#23190c	#111f1b	#1e1913	#101010	;
+$color27_colors:	#1e1c10	#12121b	#200e20	#1e0f15	#101b1e	#22170b	#101e1a	#1d1812	#0f0f0f	;
+$color28_colors:	#121312	#131213	#141212	#131312	#121213	#141412	#121213	#18140f	#0d0d0d	;
+$color29_colors:	#101210	#121112	#131110	#121110	#111012	#131310	#101012	#15110d	#0c0c0c	;
+$color30_colors:	rgba(121, 163, 115, 0.2)	rgba(154, 123, 152, 0.2)	rgba(169, 111, 108, 0.2)	rgba(164, 145, 113, 0.2)	rgba(125, 115, 163, 0.2)	rgba(173, 165, 105, 0.2)	rgba(115, 128, 163, 0.2)	rgba(168, 143, 111, 0.2)	rgba(149, 149, 149, 0.2)	;
+$color31_colors:	rgba(234, 244, 233, 0.7)	rgba(242, 235, 242, 0.7)	rgba(246, 233, 232, 0.7)	rgba(245, 240, 233, 0.7)	rgba(235, 233, 244, 0.7)	rgba(247, 245, 231, 0.7)	rgba(233, 236, 244, 0.7)	rgba(243, 240, 236, 0.7)	rgba(245, 245, 245, 0.7)	;
 
 @each $current_scheme in $color_schemes {
 	$i: index($color_schemes, $current_scheme);

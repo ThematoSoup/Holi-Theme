@@ -19,21 +19,19 @@ function twentythirteen_rainbow_customize( $wp_customize ) {
 		// Arguments array
 		array(
 			'type' => 'radio',
-			'label' => __( 'Color Scheme', 'twentythirteen_rainbow' ),
+			'label' => __( 'Color Scheme', 'holi' ),
 			'section' => 'colors',
 			'choices' => array(
-				'orange'	=> __( 'Orange (default)', 'twentythirteen_rainbow' ),
-				'green'		=> __( 'Green', 'twentythirteen_rainbow' ),
-				'purple'	=> __( 'Purple', 'twentythirteen_rainbow' ),
-				'pink'		=> __( 'Pink', 'twentythirteen_rainbow' ),
-				'red'		=> __( 'Red', 'twentythirteen_rainbow' ),
-				'blue'		=> __( 'Blue', 'twentythirteen_rainbow' ),
-				/*
-				'turquoise'	=> __( 'Turquoise', 'twentythirteen_rainbow' ),
-				'yellow'	=> __( 'Yellow', 'twentythirteen_rainbow' ),
-				'sepia'		=> __( 'Sepia', 'twentythirteen_rainbow' ),
-				'gray'		=> __( 'Gray', 'twentythirteen_rainbow' )
-				*/
+				'orange'	=> __( 'Orange (default)', 'holi' ),
+				'green'		=> __( 'Green', 'holi' ),
+				'purple'	=> __( 'Purple', 'holi' ),
+				'pink'		=> __( 'Pink', 'holi' ),
+				'red'		=> __( 'Red', 'holi' ),
+				'blue'		=> __( 'Blue', 'holi' ),
+				'yellow'	=> __( 'Yellow', 'holi' ),
+				'turquoise'	=> __( 'Turquoise', 'holi' ),
+				'sepia'		=> __( 'Sepia', 'holi' ),
+				'gray'		=> __( 'Gray', 'holi' )
 			),
 			// This last one must match setting ID from above
 			'settings' => 'twentythirteen_scheme'
@@ -69,8 +67,8 @@ add_filter( 'tiny_mce_before_init', 'twentythirteen_rainbow_tiny_mce_classes' );
  */
 function twentythirteen_multicolor_custom_header_setup() {
 
-	if ( '' != get_theme_mod( 'twentythirteen_scheme' ) ) :
-		$color_scheme = get_theme_mod( 'twentythirteen_scheme' );
+	if ( '' != get_option( 'twentythirteen_scheme' ) ) :
+		$color_scheme = get_option( 'twentythirteen_scheme' );
 	else :
 		$color_scheme = 'green';
 	endif;
