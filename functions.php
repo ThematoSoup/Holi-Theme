@@ -3,7 +3,7 @@
 /*
  * Adding Theme Customizer option
  */
-function twentythirteen_rainbow_customize( $wp_customize ) {
+function twentythirteen_holi_customize( $wp_customize ) {
 	$wp_customize->add_setting(
 		// ID
 		'twentythirteen_scheme',
@@ -38,28 +38,28 @@ function twentythirteen_rainbow_customize( $wp_customize ) {
 		)
 	);
 }
-add_action( 'customize_register', 'twentythirteen_rainbow_customize' );
+add_action( 'customize_register', 'twentythirteen_holi_customize' );
 
 
 /*
  * Add color scheme body_class
  */
-function twentythirteen_rainbow_body_classes( $classes ) {
+function twentythirteen_holi_body_classes( $classes ) {
 	$classes[] = 'scheme-' . get_option( 'twentythirteen_scheme' );
 	return $classes;	
 }
-add_filter( 'body_class', 'twentythirteen_rainbow_body_classes' );
+add_filter( 'body_class', 'twentythirteen_holi_body_classes' );
 
 
 /**
 * Adds color scheme class to Tiny MCE editor
 */
-function twentythirteen_rainbow_tiny_mce_classes( $thsp_mceInit ) {
+function twentythirteen_holi_tiny_mce_classes( $thsp_mceInit ) {
     $thsp_mceInit['body_class'] .= ' scheme-' . get_option( 'twentythirteen_scheme' );
  
     return $thsp_mceInit;
 }
-add_filter( 'tiny_mce_before_init', 'twentythirteen_rainbow_tiny_mce_classes' );
+add_filter( 'tiny_mce_before_init', 'twentythirteen_holi_tiny_mce_classes' );
 
 
 /*
