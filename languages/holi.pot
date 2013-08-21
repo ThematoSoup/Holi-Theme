@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Holi WordPress Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-19 17:44-0000\n"
-"PO-Revision-Date: 2013-08-19 17:44-0000\n"
+"POT-Creation-Date: 2013-08-21 13:11-0000\n"
+"PO-Revision-Date: 2013-08-21 13:11-0000\n"
 "Last-Translator: Slobodan Manic <slobodan.manic@gmail.com>\n"
 "Language-Team: ThematoSoup <contact@thematosoup.com>\n"
 "Language: en_US\n"
@@ -21,53 +21,49 @@ msgid "Color Scheme"
 msgstr ""
 
 #: functions.php:25
-msgid "Orange (default)"
+msgid "Orange (original)"
 msgstr ""
 
-#: functions.php:26
+#: functions.php:26 functions.php:72
 msgid "Green"
 msgstr ""
 
-#: functions.php:27
+#: functions.php:27 functions.php:73
 msgid "Purple"
 msgstr ""
 
-#: functions.php:28
+#: functions.php:28 functions.php:74
 msgid "Pink"
 msgstr ""
 
-#: functions.php:29
+#: functions.php:29 functions.php:75
 msgid "Red"
 msgstr ""
 
-#: functions.php:30
+#: functions.php:30 functions.php:76
 msgid "Blue"
 msgstr ""
 
-#: functions.php:31
+#: functions.php:31 functions.php:77
 msgid "Yellow"
 msgstr ""
 
-#: functions.php:32
+#: functions.php:32 functions.php:78
 msgid "Turquoise"
 msgstr ""
 
-#: functions.php:33
+#: functions.php:33 functions.php:79
 msgid "Sepia"
 msgstr ""
 
-#: functions.php:34
+#: functions.php:34 functions.php:80
 msgid "Gray"
 msgstr ""
 
-#: functions.php:106
+#: functions.php:71
+msgid "Orange"
+msgstr ""
+
+#: functions.php:125
 msgid "Circle"
-msgstr ""
-
-#: functions.php:111
-msgid "Diamond"
-msgstr ""
-
-#: functions.php:116
-msgid "Star"
 msgstr ""
