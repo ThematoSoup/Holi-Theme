@@ -14,5 +14,8 @@ The theme has the following 9 color schemes (in addition to original orange), wh
 * Turquoise
 * Yellow
 * Green
+* And default orange, of course
+
+All you need to do is head to Appearance > Customize, change color scheme in Colors section and optionally change header image in Header Image section. Enjoy.
 
 [1]: http://thematosoup.com

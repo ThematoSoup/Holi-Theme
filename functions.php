@@ -67,6 +67,19 @@ add_filter( 'tiny_mce_before_init', 'twentythirteen_holi_tiny_mce_classes' );
  */
 function twentythirteen_holi_custom_header_setup() {
 
+	$holi_colors = array(
+		'orange'		=> __( 'Orange', 'holi' ),
+		'green'			=> __( 'Green', 'holi' ), 
+		'purple'		=> __( 'Purple', 'holi' ),
+		'pink'			=> __( 'Pink', 'holi' ),
+		'red'			=> __( 'Red', 'holi' ),
+		'blue'			=> __( 'Blue', 'holi' ),
+		'yellow'		=> __( 'Yellow', 'holi' ),
+		'turquoise'		=> __( 'Turquoise', 'holi' ),
+		'sepia'			=> __( 'Sepia', 'holi' ),
+		'gray'			=> __( 'Gray', 'holi' ),
+	);
+	
 	if ( '' != get_option( 'twentythirteen_scheme' ) ) :
 		$color_scheme = get_option( 'twentythirteen_scheme' );
 	else :
@@ -95,27 +108,29 @@ function twentythirteen_holi_custom_header_setup() {
 	add_theme_support( 'custom-header', $args );
 
 
-	// remove the ugly orange headers
+	// remove the default headers
 	unregister_default_headers( array( 'circle', 'diamond', 'star' ) );
 
-	// replace with nice blue ones
-	register_default_headers( array(
-		'circle' => array(
-			'url'           => '%2$s/images/headers/' . $color_scheme . '/circle.png',
-			'thumbnail_url' => '%2$s/images/headers/' . $color_scheme . '/circle-thumbnail.png',
+	// replace with new ones
+	$new_headers = array();
+	foreach ( $holi_colors as $holi_color_value => $holi_color_name ) :
+		$new_headers[$holi_color_value . '-circle'] = array(
+			'url'           => '%2$s/images/headers/' . $holi_color_value . '/circle.png',
+			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/circle-thumbnail.png',
+			'description'   => $holi_color_name
+		);
+		$new_headers[$holi_color_value . '-diamond'] = array(
+			'url'           => '%2$s/images/headers/' . $holi_color_value . '/circle.png',
+			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/circle-thumbnail.png',
 			'description'   => _x( 'Circle', 'header image description', 'twentythirteen' )
-		),
-		'diamond' => array(
-			'url'           => '%2$s/images/headers/' . $color_scheme . '/diamond.png',
-			'thumbnail_url' => '%2$s/images/headers/' . $color_scheme . '/diamond-thumbnail.png',
-			'description'   => _x( 'Diamond', 'header image description', 'twentythirteen' )
-		),
-		'star' => array(
-			'url'           => '%2$s/images/headers/' . $color_scheme . '/star.png',
-			'thumbnail_url' => '%2$s/images/headers/' . $color_scheme . '/star-thumbnail.png',
-			'description'   => _x( 'Star', 'header image description', 'twentythirteen' )
-		),
-	) );
+		);
+		$new_headers[$holi_color_value . '-star'] = array(
+			'url'           => '%2$s/images/headers/' . $holi_color_value . '/diamond.png',
+			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/diamond-thumbnail.png',
+			'description'   => $holi_color_name
+		);
+	endforeach;
+	register_default_headers( $new_headers );
 }
 add_action( 'after_setup_theme', 'twentythirteen_holi_custom_header_setup', 11 );
 
