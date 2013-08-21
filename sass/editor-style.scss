@@ -75,7 +75,7 @@ $color31_colors:	rgba(234, 244, 233, 0.7)	rgba(242, 235, 242, 0.7)	rgba(246, 233
 	$color30: nth($color30_colors, $i);
 	$color31: nth($color31_colors, $i);
 
-	#tinymce.scheme-#{$current_scheme} {
+	#tinymce.holi-color-scheme-#{$current_scheme} {
 		color: $color28;
 		ins {
 			background: $color1;

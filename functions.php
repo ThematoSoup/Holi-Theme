@@ -22,7 +22,7 @@ function twentythirteen_holi_customize( $wp_customize ) {
 			'label' => __( 'Color Scheme', 'holi' ),
 			'section' => 'colors',
 			'choices' => array(
-				'orange'	=> __( 'Orange (default)', 'holi' ),
+				'orange'	=> __( 'Orange (original)', 'holi' ),
 				'green'		=> __( 'Green', 'holi' ),
 				'purple'	=> __( 'Purple', 'holi' ),
 				'pink'		=> __( 'Pink', 'holi' ),
@@ -45,7 +45,7 @@ add_action( 'customize_register', 'twentythirteen_holi_customize' );
  * Add color scheme body_class
  */
 function twentythirteen_holi_body_classes( $classes ) {
-	$classes[] = 'scheme-' . get_option( 'twentythirteen_scheme' );
+	$classes[] = 'holi-color-scheme-' . get_option( 'twentythirteen_scheme' );
 	return $classes;	
 }
 add_filter( 'body_class', 'twentythirteen_holi_body_classes' );
@@ -55,7 +55,7 @@ add_filter( 'body_class', 'twentythirteen_holi_body_classes' );
 * Adds color scheme class to Tiny MCE editor
 */
 function twentythirteen_holi_tiny_mce_classes( $thsp_mceInit ) {
-    $thsp_mceInit['body_class'] .= ' scheme-' . get_option( 'twentythirteen_scheme' );
+    $thsp_mceInit['body_class'] .= ' holi-color-scheme-' . get_option( 'twentythirteen_scheme' );
  
     return $thsp_mceInit;
 }
@@ -65,7 +65,7 @@ add_filter( 'tiny_mce_before_init', 'twentythirteen_holi_tiny_mce_classes' );
 /*
  * Replace header images based on active color scheme
  */
-function twentythirteen_multicolor_custom_header_setup() {
+function twentythirteen_holi_custom_header_setup() {
 
 	if ( '' != get_option( 'twentythirteen_scheme' ) ) :
 		$color_scheme = get_option( 'twentythirteen_scheme' );
@@ -117,4 +117,27 @@ function twentythirteen_multicolor_custom_header_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'twentythirteen_multicolor_custom_header_setup', 11 );
+add_action( 'after_setup_theme', 'twentythirteen_holi_custom_header_setup', 11 );
+
+
+/**
+ * Add postMessage support for site title and description for the Customizer.
+ *
+ * @since Holi 1.0.2
+ */
+function twentythirteen_holi_customize_register( $wp_customize ) {
+	$wp_customize->get_setting( 'twentythirteen_scheme' )->transport = 'postMessage';
+}
+add_action( 'customize_register', 'twentythirteen_holi_customize_register' );
+
+
+/**
+ * Binds JavaScript handlers to make Customizer preview reload changes
+ * asynchronously.
+ *
+ * @since Holi 1.0.2
+ */
+function twentythirteen_holi_customize_preview_js() {
+	wp_enqueue_script( 'twentythirteen-holi-customizer', get_stylesheet_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '1.0.2', true );
+}
+add_action( 'customize_preview_init', 'twentythirteen_holi_customize_preview_js' );
