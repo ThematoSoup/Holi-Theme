@@ -18,4 +18,6 @@ The theme has the following 9 color schemes (in addition to original orange), wh
 
 All you need to do is head to Appearance > Customize, change color scheme in Colors section and optionally change header image in Header Image section. Enjoy.
 
+This theme and all bundled resources, like WordPress, are licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
+
 [1]: http://thematosoup.com
