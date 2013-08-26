@@ -32,7 +32,7 @@ function twentythirteen_holi_customize( $wp_customize ) {
 				'turquoise'	=> __( 'Turquoise', 'holi' ),
 				'sepia'		=> __( 'Sepia', 'holi' ),
 				'gray'		=> __( 'Gray', 'holi' ),
-				'coteazur'	=> __( 'Cote Azur', 'holi' )
+				'coteazur'	=> __( 'Cote d\'Azur', 'holi' )
 			),
 			// This last one must match setting ID from above
 			'settings' => 'twentythirteen_scheme'
@@ -79,7 +79,7 @@ function twentythirteen_holi_custom_header_setup() {
 		'turquoise'		=> __( 'Turquoise', 'holi' ),
 		'sepia'			=> __( 'Sepia', 'holi' ),
 		'gray'			=> __( 'Gray', 'holi' ),
-		'coteazur'		=> __( 'Cote Azur', 'holi' ),
+		'coteazur'		=> __( 'Cote d\'Azur', 'holi' ),
 	);
 	
 	if ( '' != get_option( 'twentythirteen_scheme' ) ) :

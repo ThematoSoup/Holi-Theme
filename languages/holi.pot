@@ -60,6 +60,10 @@ msgstr ""
 msgid "Gray"
 msgstr ""
 
+#: functions.php:34 functions.php:80
+msgid "Cote d'Azur"
+msgstr ""
+
 #: functions.php:71
 msgid "Orange"
 msgstr ""
