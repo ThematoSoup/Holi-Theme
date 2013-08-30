@@ -20,4 +20,7 @@ All you need to do is head to Appearance > Customize, change color scheme in Col
 
 This theme and all bundled resources, like WordPress, are licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
 
+Cote d'Azur color scheme contributed by [fikander][2]
+
 [1]: http://thematosoup.com
+[2]: https://github.com/fikander
