@@ -117,8 +117,8 @@ function twentythirteen_holi_custom_header_setup() {
 	$new_headers = array();
 	foreach ( $holi_colors as $holi_color_value => $holi_color_name ) :
 		$new_headers[$holi_color_value . '-circle'] = array(
-			'url'           => '%2$s/images/headers/' . $holi_color_value . '/circle.png',
-			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/circle-thumbnail.png',
+			'url'           => '%2$s/images/headers/' . $holi_color_value . '/star.png',
+			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/star-thumbnail.png',
 			'description'   => $holi_color_name
 		);
 		$new_headers[$holi_color_value . '-diamond'] = array(
