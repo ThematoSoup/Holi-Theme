@@ -116,20 +116,20 @@ function twentythirteen_holi_custom_header_setup() {
 	// replace with new ones
 	$new_headers = array();
 	foreach ( $holi_colors as $holi_color_value => $holi_color_name ) :
-		$new_headers[$holi_color_value . '-circle'] = array(
+		$new_headers[$holi_color_value . '-star'] = array(
 			'url'           => '%2$s/images/headers/' . $holi_color_value . '/star.png',
 			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/star-thumbnail.png',
-			'description'   => $holi_color_name
+			'description'   => _x( 'Star', 'header image description', 'twentythirteen' )
 		);
-		$new_headers[$holi_color_value . '-diamond'] = array(
+		$new_headers[$holi_color_value . '-circle'] = array(
 			'url'           => '%2$s/images/headers/' . $holi_color_value . '/circle.png',
 			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/circle-thumbnail.png',
 			'description'   => _x( 'Circle', 'header image description', 'twentythirteen' )
 		);
-		$new_headers[$holi_color_value . '-star'] = array(
+		$new_headers[$holi_color_value . '-diamond'] = array(
 			'url'           => '%2$s/images/headers/' . $holi_color_value . '/diamond.png',
 			'thumbnail_url' => '%2$s/images/headers/' . $holi_color_value . '/diamond-thumbnail.png',
-			'description'   => $holi_color_name
+			'description'   => _x( 'Diamond', 'header image description', 'twentythirteen' )
 		);
 	endforeach;
 	register_default_headers( $new_headers );
