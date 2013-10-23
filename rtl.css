@@ -12,13 +12,3 @@ This theme and all bundled resources, like WordPress, are licensed under the GPL
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import url("../twentythirteen/rtl.css");
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
-@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Alef Hebrew", Bitter, Georgia, serif;
-}
-
-html, button, input, select, textarea {
-  font-family: "Open Sans Hebrew", "Source Sans Pro", Helvetica, sans-serif;
-}
