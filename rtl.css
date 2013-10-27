@@ -1,19 +1,59 @@
 /*
-Theme Name:   Holi
-Theme URI:    http://thematosoup.com/products/twenty-thirteen-multi-colored/
-Description:  Multicolor child theme for the Twenty Thirteen theme 
-Author:       ThematoSoup
-Author URI:   http://thematosoup.com
-Template:     twentythirteen
-Tags:         blue, gray, green, yellow, pink, purple, red, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Version:      1.0.4
+Theme Name:             Holi
+Theme URI:              http://thematosoup.com/products/twenty-thirteen-multi-colored/
+Description:    Multicolor child theme for the Twenty Thirteen theme
+Author:                 ThematoSoup
+Author URI:             http://thematosoup.com
+Template:               twentythirteen
+Tags:                   blue, gray, green, yellow, pink, purple, red, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Version:                1.0.4
 
-This theme and all bundled resources, like WordPress, are licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+This theme and all bundled resources are licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others.
+
+Header/BG Images License
+Author:                 Slobodan Manic <200b>http://thematosoup.com
+License:                GPLv2
 */
-@import url("../twentythirteen/rtl.css");
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Alef Hebrew", Bitter, Georgia, serif;
+@import url("../twentythirteen/rtl.css");
+/*
+ * Alef Hebrew (Hebrew) http://www.google.com/fonts/earlyaccess
+ *
+ * @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+*/
+@font-face {
+  font-family: 'Alef Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Bold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Bold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Bold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Alef';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Regular.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Regular.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Regular.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/alefhebrew/v2/Alef-Regular.ttf) format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6,
+html, button, input, select, textarea {
+  font-family: Alef, Helvetica, Arial, sans-serif;
+}
+.widget-title {
+  font: 300 italic 20px Alef, Helvetica, Arial, sans-serif !important;
+}
+
+.site-description {
+  font: 300 italic 24px Alef, Helvetica, Arial, sans-serif;
+}
+
+.site-title {
+  font-family: "Alef Bold", Helvetica, Arial, sans-serif;
 }
